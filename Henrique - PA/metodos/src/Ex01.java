@@ -2,14 +2,17 @@ import java.util.Scanner;
 
 public class Ex01 {
     public static void main(String[] args) {
+        user();
+    }
+    public static void user(){
         Scanner input = new Scanner(System.in);
         System.out.println("Informe um número: ");
         int num = input.nextInt();
         input.close();
         switch (num){
             case 01:
-               verao();
-               break;
+                verao();
+                break;
             case 02:
                 inverno();
                 break;
@@ -24,10 +27,7 @@ public class Ex01 {
                 break;
 
         }
-
-    }
-    public static void user(){
-
+        input.close();
     }
     public static void verao(){
         System.out.println("é verão");
