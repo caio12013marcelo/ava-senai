@@ -8,7 +8,7 @@ public class Ex02 {
     Faça um método para seus colegas mais próximos
     O método deve imprimir:
     O nome dele(a) é [nome]
-    E   le(a) tem [idade] anos
+    Ele(a) tem [idade] anos
     Ele(a) é estudante de desenvolvimento de sistemas
     (Em prints separados)
     Faça com que o método seja uma expressão verbal com o nome do seu colega.
