@@ -1,0 +1,10 @@
+1) Defina o que é regra de negócio ?
+R: Regra de negócio vai alterar uma pequena parte de requisito funcional para que o programa funcional do desejo do cliente
+
+2) Defina requisito ?
+R:É tudo aquilo que é necessário para programa funcionar
+
+3) Qual a diferença entre requisito Funcional e Não Funcional ? Cite 2 Exemplos ?
+R: Requisito funcional é ação que o sistema/usuário faz, o requisito não funcional é um requisito que altera programa em seu todo,
+RF= usuário fazer login e alterar senha
+RNF= sistema tem que funcionar 24/7 e deve ser rápido
