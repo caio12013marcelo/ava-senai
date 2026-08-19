@@ -6,7 +6,7 @@ public class Ex01 {
     }
     public static void user(){
         Scanner input = new Scanner(System.in);
-        System.out.println("Informe um número: ");
+        System.out.println("Informe um número 1- verão 2-inverno 3-primavera 4-outono: ");
         int num = input.nextInt();
         input.close();
         switch (num){
