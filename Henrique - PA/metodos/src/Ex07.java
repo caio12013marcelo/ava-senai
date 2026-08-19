@@ -26,7 +26,7 @@ public class Ex07 {
     public static void main(String[] args) {
         recebeInfo();
     }
-    
+
     public static void recebeInfo(){
         Scanner input = new Scanner(System.in);
 
