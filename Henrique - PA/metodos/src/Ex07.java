@@ -13,12 +13,27 @@ public class Ex07 {
 
      String resposta = switch (opcao) {
             case 1 ->verao();
+            case 2 ->inverno();
+            case 3 ->outono();
+            case 4 ->primavera();
          default -> falso();
         };
      return resposta;
     }
     public static String verao(){
         String answer ="verão";
+        return answer;
+    }
+    public static String inverno(){
+        String answer="inverno";
+        return answer;
+    }
+    public static String outono(){
+        String answer="outono";
+        return answer;
+    }
+    public static String primavera(){
+        String answer="primavera";
         return answer;
     }
     public static String falso(){
