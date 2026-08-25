@@ -5,8 +5,8 @@ public class Ex08 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double somaNotas=0;
-        for (int i=1;i<=3;i++){
-            System.out.println("Informe a nota do aluno "+i+"/3");
+        for (int i=0;i<=3;i++){
+            System.out.println("Informe a nota do aluno "+(i+1)+"/3");
             double nota = input.nextInt();
             somaNotas =  somaNotas+nota;
         }
