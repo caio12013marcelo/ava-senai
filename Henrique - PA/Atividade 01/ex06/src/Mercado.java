@@ -5,9 +5,13 @@ public class Mercado {
     int vendasAnualLaranjas;
     double precoLaranjas;
     public double obterReceitaMacas(){
+
         return vendasAnualMacas*precoMacas;
     }
     public double obterReceitaLaranja(){
         return vendasAnualLaranjas*precoLaranjas;
+    }
+    public double obterReceitaTotal(){
+        return obterReceitaLaranja()+obterReceitaMacas();
     }
 }
