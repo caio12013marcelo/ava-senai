@@ -1,0 +1,1 @@
+INSERT INTO produtos (nome,categoria,preco,quantidade)VALUES('teclado','informatica',89.90,15);
