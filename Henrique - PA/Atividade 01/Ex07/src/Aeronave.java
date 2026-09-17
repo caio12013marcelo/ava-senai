@@ -24,7 +24,11 @@ public class Aeronave {
     }
 
     public void setModelo(String modelo) {
-        this.modelo = modelo;
+        if (modelo == null || modelo.isBlank()) {
+            System.out.println("erro");
+        } else{
+            this.modelo = modelo;
+     }
     }
 
     public int getPasageiros() {
@@ -32,7 +36,11 @@ public class Aeronave {
     }
 
     public void setPasageiros(int pasageiros) {
-        this.pasageiros = pasageiros;
+        if (pasageiros<=0){
+            System.out.println("Erro,quantia errada de passageiros");
+        }else {
+            this.pasageiros = pasageiros;
+        }
     }
 
     public double getVelocidadeMax() {
@@ -40,7 +48,11 @@ public class Aeronave {
     }
 
     public void setVelocidadeMax(double velocidadeMax) {
-        this.velocidadeMax = velocidadeMax;
+        if(velocidadeMax<=0){
+            System.out.println("Erro,quantia inesperada de velocidade máxima");
+        }else {
+            this.velocidadeMax = velocidadeMax;
+        }
     }
 
     public double getCapacidadeCombustivel() {
@@ -48,7 +60,11 @@ public class Aeronave {
     }
 
     public void setCapacidadeCombustivel(double capacidadeCombustivel) {
-        this.capacidadeCombustivel = capacidadeCombustivel;
+        if(capacidadeCombustivel<=0){
+            System.out.println("Erro,quantia errada de capacidade de combustivel");
+        }else {
+            this.capacidadeCombustivel = capacidadeCombustivel;
+        }
     }
 
     public double getCombustivelPorMinuto() {
@@ -56,7 +72,11 @@ public class Aeronave {
     }
 
     public void setCombustivelPorMinuto(double combustivelPorMinuto) {
-        this.combustivelPorMinuto = combustivelPorMinuto;
+        if (combustivelPorMinuto<=0){
+            System.out.println("Erro, quantia errada de combustivel por minuto");
+        }else {
+            this.combustivelPorMinuto = combustivelPorMinuto;
+        }
     }
 
     @Override

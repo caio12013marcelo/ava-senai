@@ -29,8 +29,8 @@ public class Main {
         int ip=0;
         double maiorCargaPassageiros= Integer.MIN_VALUE;
         for (int i = 0; i < aeronaves.length; i++) {
-            if (aeronaves[i].pasageiros>maiorCargaPassageiros){
-                maiorCargaPassageiros= aeronaves[i].pasageiros;
+            if (aeronaves[i].getPasageiros()>maiorCargaPassageiros){
+                maiorCargaPassageiros= aeronaves[i].getPasageiros();
                 ip=i;
             }
         }
