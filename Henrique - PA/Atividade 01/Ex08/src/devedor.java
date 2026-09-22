@@ -1,4 +1,4 @@
-public class devedor {
+public class Devedor {
     private String nome;
     private String cpf;
     private String uF;
@@ -6,7 +6,7 @@ public class devedor {
     private double aliquota;
     private double impostoApagar;
 
-    public devedor(String nome, String cpf, String uF, double rendaAnual) {
+    public Devedor(String nome, String cpf, String uF, double rendaAnual) {
         this.nome = nome;
         this.cpf = cpf;
         this.uF = uF;
@@ -56,5 +56,29 @@ public class devedor {
         }
         this.rendaAnual = rendaAnual;
     }
-    public void
+    public double calcularImposto(){
+        if (rendaAnual<=4000){
+            return 0;
+        } else if (rendaAnual<=9000) {
+            return rendaAnual * 0.058;
+        } else if (rendaAnual<=25000) {
+            return rendaAnual * 0.15;
+        } else if (rendaAnual<=35000) {
+            return  rendaAnual * 0.275;
+        }else{
+            return rendaAnual * 0.30;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Devedor{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", uF='" + uF + '\'' +
+                ", rendaAnual=" + rendaAnual +
+                ", aliquota=" + aliquota +
+                ", impostoApagar=" + impostoApagar +
+                '}';
+    }
 }
